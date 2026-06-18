@@ -1,1 +1,40 @@
+# Tic Tac Toe — Java SE
 
+An interactive, terminal-based Tic Tac Toe game developed in Java. This project focuses on applying clean structural logic, multidimensional array manipulation, and dynamic game state validation within a Command Line Interface (CLI).
+
+---
+
+## Applied Concepts & Architecture
+
+Instead of a simple linear script, this project demonstrates foundational software engineering principles in Java:
+
+* **Matrix-Based State Management:** Utilizing a 2D `char[][]` array to efficiently represent, update, and render the board grid in real-time.
+* **Robust Input Validation:** Implementing conditional bound-checking and spot-availability validation loops to ensure a smooth, error-free user experience.
+* **Control Flow Optimization:** Utilizing ternary operators to switch active player turns (`X` and `O`) dynamically and evaluating match termination conditions (win or draw) efficiently after every move.
+
+---
+
+## Tech Stack & Features
+
+* **Language:** Java (JDK 11+)
+* **Interface:** Command Line Interface (CLI)
+* **Game Loop:** A robust `while` loop that keeps the match running smoothly for up to 9 valid moves or until a winning streak is hit.
+
+---
+
+## How to Play
+
+1. The game initializes a completely blank 3x3 grid.
+2. Players take turns entering their desired coordinates by typing the **Row** (0-2) and then the **Column** (0-2).
+3. The system scans all horizontal rows, vertical columns, and both diagonals after each move.
+4. The match automatically terminates when a player scores 3 matching symbols in a row or when the board is completely full (resulting in a Draw).
+
+---
+
+## How to Compile and Run
+
+Make sure you have the Java Development Kit (JDK) installed on your machine.
+
+1. Open your terminal and navigate to the game directory:
+   ```bash
+   cd 02-games/tic-tac-toe
