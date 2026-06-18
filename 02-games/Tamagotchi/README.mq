@@ -1,0 +1,40 @@
+# Tamagotchi Virtual Pet — Java SE
+
+An interactive, terminal-based Virtual Pet (Tamagotchi) game built in Java. This project demonstrates core **Object-Oriented Programming (OOP)** concepts, focusing heavily on **Encapsulation**, state management, and conditional behavioral logic.
+
+---
+
+## OOP Concepts & Architecture
+
+Instead of managing states globally, this project encapsulates data within a dedicated object model:
+
+* **Encapsulation:** Class attributes (`hunger`, `happiness`, `energy`) are structured using `private` modifiers, shielding the object's internal state from unauthorized external manipulation.
+* **State Interdependency:** Interactions dynamically shift multiple state variables simultaneously (e.g., sleeping restores energy but increases hunger), mimicking a realistic lifelike system.
+* **Input-Driven State Boundaries:** Implements runtime threshold validation loops to ensure attributes stay within realistic operational limits (preventing infinite playing when exhausted).
+
+---
+
+## Tech Stack & Features
+
+* **Language:** Java (JDK 11+)
+* **Core Paradigm:** Object-Oriented Programming (OOP)
+* **Interface:** Command Line Interface (CLI)
+
+---
+
+## Available Interactions
+
+* **Feed (`alimentar`):** Reduces hunger level by 10 points unless the pet is completely full.
+* **Play (`brincar`):** Boosts happiness by 10 points while expending 10 points of energy. The pet will refuse to play if its energy is too low.
+* **Sleep (`dormir`):** Restores 20 energy points but increases hunger levels by 10 points.
+* **Status Monitor (`mostrarStatus`):** Renders a real-time diagnostic printout of all internal vital metrics on the terminal.
+
+---
+
+## How to Compile and Run
+
+Make sure you have the Java Development Kit (JDK) installed on your machine.
+
+1. Open your terminal and navigate to the game directory:
+   ```bash
+   cd 02-games/tamagotchi
